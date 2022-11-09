@@ -12,8 +12,7 @@ public class ManipuladorArquivo {
 
   public static void leitor(String path) throws IOException {
     BufferedReader bufferReader = new BufferedReader(new FileReader(path));
-    String linha = "";
-    System.out.println(linha);
+    System.out.println(bufferReader.readLine());
     bufferReader.close();
   }
 
